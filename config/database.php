@@ -22,7 +22,6 @@ $options = [
 try {
   $pdo = new PDO($dsn, $user, $pass, $options);
   if($pdo==true){
-    echo "success";
   }
 } catch (PDOException $e) {
   throw new PDOException($e->getMessage(), $e->getCode());
